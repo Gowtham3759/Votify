@@ -1,0 +1,106 @@
+{
+  "admins": [
+    {
+      "id": "1",
+      "email": "admin@g",
+      "password": "123",
+      "role": "admin"
+    }
+  ],
+  "users": [
+    {
+      "id": "a4e9",
+      "firstName": "s",
+      "lastName": "s",
+      "age": "22",
+      "gender": "male",
+      "voterId": "VOTER1231",
+      "mobile": "1212",
+      "email": "h1@g",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "user"
+    },
+    {
+      "id": "184c",
+      "firstName": "ASWIN",
+      "lastName": "S",
+      "age": "20",
+      "gender": "male",
+      "voterId": "VOTER1234As",
+      "mobile": "48851",
+      "email": "as@g",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "elections": [
+    {
+      "id": "6c12",
+      "name": "adivote",
+      "date": "2024-10-03",
+      "parties": [
+        {
+          "name": "adip",
+          "candidate": "adic",
+          "voteCount": 0
+        },
+        {
+          "name": "adi2p",
+          "candidate": "adi2def",
+          "voteCount": 0
+        },
+        {
+          "name": "er3",
+          "candidate": "er3i",
+          "voteCount": 1
+        }
+      ],
+      "participants": [
+        "c469"
+      ]
+    },
+    {
+      "id": "10e4",
+      "name": "akshayvote",
+      "date": "2024-11-08",
+      "parties": [
+        {
+          "name": "harishp",
+          "candidate": "harishc"
+        },
+        {
+          "name": "akshayp",
+          "candidate": "akshayc",
+          "voteCount": 1
+        },
+        {
+          "name": "adip",
+          "candidate": "adic"
+        }
+      ],
+      "participants": [
+        "3faa",
+        "8f4c",
+        "7c61",
+        "ecb0"
+      ]
+    }
+  ],
+  "votes": [
+    {
+      "id": "a5fd",
+      "userId": "c469",
+      "electionId": "6c12",
+      "party": "er3",
+      "candidate": "er3i"
+    },
+    {
+      "id": "6515",
+      "userId": "c469",
+      "electionId": "10e4",
+      "party": "akshayp",
+      "candidate": "akshayc"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+.voting-page-body09 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(220, 82, 95); /* Same as UserDashboard */
+  font-family: 'Poppins', sans-serif;
+}
+
+.voting-page-container09 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.voting-page-title09 {
+  color: rgb(220, 82, 95);
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+/* Style for the list of parties */
+.party-list09 {
+  list-style-type: none;
+  padding: 0;
+}
+
+.party-option09 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background-color: white;
+  position: relative; /* Required for absolute children */
+  padding: 20px 50px;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin: 20px 0px;
+  overflow: hidden;
+  z-index: 1; /* Ensure content appears above waves */
+}
+
+.vote-button09 {
+  background-color: blue;
+  color: white;
+  padding: 0px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  position: relative; /* Make sure the button is positioned correctly */
+  z-index: 2; /* Keep button above wave animations */
+}
+
+.vote-button09:hover {
+  background-color: darkblue;
+}
+
+/* Wave animation for each party-option card */
+.party-option09::before,
+.party-option09::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 45% 55% 50% 60%;
+  z-index: 0; /* Set waves behind content */
+  opacity: 0.2;
+}
+
+.party-option09::before {
+  left: 50%;
+  bottom: -70%;
+  background-color: rgba(240, 0, 44, 0.971);
+  animation: waves09 6s infinite linear;
+}
+
+.party-option09::after {
+  left: 25%;
+  bottom: -80%;
+  background-color: rgb(227, 60, 4);
+  animation: waves09 7s infinite;
+}
+
+@keyframes waves09 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,67 @@
+/* src/Components/CreateElection.css */
+
+.create-election {
+  max-width: 600px; /* Limit the maximum width of the form */
+  margin: 30px auto; /* Center the form horizontally */
+  padding: 20px; /* Padding around the form */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #ffffff; /* White background */
+}
+
+.create-election h2 {
+  text-align: center; /* Center the title */
+  color: #333; /* Dark gray color for the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space below each form group */
+}
+
+.form-group label {
+  display: block; /* Each label on a new line */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Bold text for labels */
+  color: #555; /* Medium gray color for labels */
+}
+
+.create-election input[type="text"],
+.create-election input[type="date"] {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Increase font size */
+  margin-bottom: 10px; /* Space below each input */
+}
+
+.create-election input[type="text"]:focus,
+.create-election input[type="date"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.party-group {
+  margin-bottom: 15px; /* Space between party entries */
+}
+
+.add-party-button,
+.submit-button {
+  width: 100%; /* Full width for buttons */
+  padding: 10px; /* Padding inside buttons */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin-top: 10px; /* Space above the button */
+}
+
+.add-party-button:hover,
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
